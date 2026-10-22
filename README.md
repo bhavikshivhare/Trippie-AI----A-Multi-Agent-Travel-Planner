@@ -21,5 +21,3 @@ conda activate travel
 pip install -r requirements.txt
 '''
 
-4. 
-
