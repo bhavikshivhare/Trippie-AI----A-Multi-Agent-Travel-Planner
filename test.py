@@ -11,9 +11,18 @@ from backend import run_travel_agent
 #res = search_flights("Plan a 7 days Japan trip from India")
 #print(res)
 
-user_input = input("enter travel request")
+#user_input = input("enter travel request")
 
-response = run_travel_agent(user_input = user_input,thread_id="test_user")
+#response = run_travel_agent(user_input = user_input,thread_id="test_user")
 
-print(response["answer"])
+#print(response["answer"])
+
+
+import asyncio
+from mcp_client import get_all_tools
+
+if __name__ == "__main__":
+    #query = 'latest news about AI'
+    asyncio.run(get_all_tools())
+
 

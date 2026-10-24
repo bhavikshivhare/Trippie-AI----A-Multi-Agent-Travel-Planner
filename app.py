@@ -8,6 +8,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 
+import nest_asyncio
+nest_asyncio.apply()
 
 from backend import run_travel_agent
 
